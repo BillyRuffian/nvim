@@ -22,6 +22,7 @@ require("nvim-tree").setup({
 
 vim.cmd('colorscheme carbonfox')
 
+-- https://arisweedler.medium.com/tab-settings-in-vim-1ea0863c5990
 vim.wo.relativenumber = true
 vim.o.expandtab = true
 vim.o.smartindent = true
