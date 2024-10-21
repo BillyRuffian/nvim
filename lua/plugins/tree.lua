@@ -1,5 +1,5 @@
 return{
-	{ "nvim-tree/nvim-web-devicons", lazy = true },  
+  { "nvim-tree/nvim-web-devicons", lazy = true },  
   "nvim-tree/nvim-tree.lua",
   version = "*",
   lazy = false,
