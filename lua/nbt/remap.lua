@@ -23,3 +23,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 vim.keymap.set('n', '<leader>tt', function()
   vim.cmd.NvimTreeToggle()
 end)
+
+-- window controls
+vim.keymap.set('n', '<C->>', '<C-w>>')
+vim.keymap.set('n', '<C-<>', '<C-w><')
