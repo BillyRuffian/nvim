@@ -28,5 +28,5 @@ vim.keymap.set('n', '<leader>th', function()
 end)
 
 -- window controls
-vim.keymap.set('n', '<C->>', '<C-w>>')
-vim.keymap.set('n', '<C-<>', '<C-w><')
+vim.keymap.set('n', '<C-,>', '<C-w><', { desc = 'Narrow window' })
+vim.keymap.set('n', '<C-.>', '<C-w>>', { desc = 'Widen window' })
