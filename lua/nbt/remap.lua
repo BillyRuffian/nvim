@@ -21,6 +21,9 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 
 -- nvim-tree
 vim.keymap.set('n', '<leader>tt', function()
+  vim.cmd.NvimTreeFindFile()
+end)
+vim.keymap.set('n', '<leader>th', function()
   vim.cmd.NvimTreeToggle()
 end)
 
