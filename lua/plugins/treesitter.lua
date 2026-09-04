@@ -1,6 +1,8 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    branch = 'master',
+
     opts = {
       ensure_installed = {
         "bash",
@@ -19,9 +21,15 @@ return {
         "vim",
         "yaml",
       },
-      highlight = { enable = true },
-      indent = { enable = true },
     },
+    config = function()
+      local config = require('nvim-treesitter.configs')
+      config.setup({
+        highlight = { enable = true },
+        indent = { enable = true },
+        auto_install = true,
+      })
+    end,
     build = function()
       require("nvim-treesitter.install").update({ with_sync = true })()
     end,
